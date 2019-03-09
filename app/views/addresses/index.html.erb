@@ -1,2 +1,15 @@
-<h1>Addresses#index</h1>
-<p>Find me in app/views/addresses/index.html.erb</p>
+<div class="ui grid">
+  <% @addresses.each do |address| %>
+  <div class="four wide column">
+    <div class="ui horizontal segments" style="padding: 10px;">
+        <i class="list ul icon"></i>
+        <div class="ui segment" style="padding: 27px;">
+        <h2 ><%= link_to "#{address.name}", address %></h2>
+        <h2><%= link_to "edit", edit_location_address_path(@location, address) %></h2>
+        <h2><%= link_to "new", new_location_address_path(@location, address) %></h2>
+        <h2><%= link_to "delete", location_address_path(@location, address), method: :delete %></h2>
+        </div>
+    </div>
+  </div>
+  <% end %>
+</div>

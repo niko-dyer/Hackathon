@@ -1,0 +1,4 @@
+Change address table to display city/state as string instead of integer
+devise
+make ui pretty
+make sure all routes are properly routed
