@@ -1,17 +1,13 @@
-<div class="ui inverted segment">
-  <div class="ui inverted secondary pointing menu">
-    <h2> Trip Planner </h2>
-      <%= link_to 'Trips', trips_path, class: 'item' %>
-      <%= link_to 'Add Trips', new_trip_path, class: 'item' %>
+<div class="ui inverted segment" style="opacity: .8;">
+  <div class="ui inverted pointing menu" style="opacity: .8;">
+    <h2 style="margin-bottom: -20px; margin-top: 15px; margin-right: 10px; margin-left: 10px;"> Trip Planner </h2>
+      <%= link_to 'Trips', trips_path, class: 'item', style: 'margin-top: 10px;' %>
+      <%= link_to 'Add Trips', new_trip_path, class: 'item', style: 'margin-top: 10px;'%>
   <div class="right menu">
-    <div class="ui search" style="opacity: .7;">
-      <div class="ui icon input">
-        <input class="prompt" type="text" placeholder="Search any trip...">
-        <i class="search icon"></i>
-      </div>
       <div class="results"></div>
       </div>
-      <%#= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'item' %>
+
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'item', style: 'margin-top: 10px;'%>
     <!-- link devise info to navbar-->
   </div>
   </div>
