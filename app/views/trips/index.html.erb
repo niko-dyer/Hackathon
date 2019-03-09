@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+<%=  %><br>
+<h2 class="ui center aligned icon header" style="color: white; font-size: 3em; margin-left: -50px; margin-top: 70px;">
+  Trips
+</h2>
+<button><%= link_to 'Random', trips_random_path, method: :post %></button>
+<br><br>
+>>>>>>> 271158e3c60b3d96bfc8f7bb2f6e1b0cfec4bbb2
 
 <div class="ui grid">
   <% @trips.each do |trip| %>
@@ -6,11 +15,21 @@
         <i class="list ul icon"></i>
         <div class="ui segment" style="padding: 27px;">
         <h2 ><%= link_to "#{trip.name}", trip %></h2>
+<<<<<<< HEAD
         <h2><%= link_to "edit", edit_trip_path(trip) %></h2>
         <h2><%= link_to "new", new_trip_path(trip) %></h2>
         <h2><%= link_to "delete", trip, method: :delete %></h2>
+=======
+>>>>>>> 271158e3c60b3d96bfc8f7bb2f6e1b0cfec4bbb2
         </div>
     </div>
   </div>
   <% end %>
+<<<<<<< HEAD
 </div>
+=======
+  </div>
+
+  <!-- font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;-->
+>>>>>>> 271158e3c60b3d96bfc8f7bb2f6e1b0cfec4bbb2
