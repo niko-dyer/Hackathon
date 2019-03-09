@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
-  before_action :set_trip
-  before_action :set_location, only: [:show, :new, :edit, :destroy]
+  before_action :set_trip, only: [:index, :new, :create, :destroy]
+  before_action :set_location, only: [:show, :edit, :destroy]
 
   def index
     @locations = @trip.locations
