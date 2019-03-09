@@ -1,2 +1,27 @@
-<h1>Trips#new</h1>
-<p>Find me in app/views/trips/new.html.erb</p>
+<br><br><br><br>
+<div class="ui segments" style="opacity: .8">
+ <div class="ui segment">
+
+<h1><%= @trip.id ? 'Edit Trip' : 'Create Trip' %></h1>
+<div class="ui form">
+    <div class="field">
+        <%= form_for @trip do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+        <%= f.label :start_date %>
+        <%= f.date_field :start_date %>
+    </div>
+
+    <div class="field">
+        <%= f.label :end_date %>
+        <%= f.date_field :end_date %>
+    </div>
+    
+        <%= f.submit %>
+        
+        <% end %>
+    </div>
+</div>
